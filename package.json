@@ -1,0 +1,55 @@
+{
+  "name": "techbids",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server/src/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon server/src/index.js",
+    "test": "cross-env NODE_ENV=test jest --runInBand",
+    "db:build": "cross-env NODE_ENV=development node server/src/config/dbBuild.js",
+    "lint": "eslint server/src/** .",
+    "lint-fix": "eslint server/src/** --fix",
+    "lint-client": "cd client && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G10/TechBids.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G10/TechBids/issues"
+  },
+  "homepage": "https://github.com/GSG-G10/TechBids#readme",
+  "dependencies": {
+    "@types/sequelize": "^4.28.10",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "env2": "^2.2.2",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.11.0",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.14",
+    "pre-commit": "^1.2.2",
+    "supertest": "^6.1.6"
+  },
+  "pre-commit": [
+    "lint",
+    "lint-client",
+    "test"
+  ]
+}

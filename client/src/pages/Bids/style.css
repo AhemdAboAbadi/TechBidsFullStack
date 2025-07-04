@@ -1,0 +1,53 @@
+.bids-container {
+  display: flex;
+  width: 85%;
+  margin: 10vh auto 0;
+  justify-content: space-between;
+}
+.filters-container {
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+}
+.filter-title {
+  font-weight: bolder !important;
+  color: black !important;
+  font-size: 1.1rem !important;
+}
+.container {
+  margin: 10px 20px;
+}
+.container .css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: 0.9rem;
+}
+.filter-container {
+  margin-bottom: 3vh !important;
+}
+.css-1a4ulmf-MuiSlider-root {
+  margin: 10px 30px !important;
+  font-size: 0.2rem !important;
+  width: 85% !important;
+}
+.list-container .css-1fg13to-MuiTypography-root {
+  font-size: 0.9rem !important;
+  line-height: 0.7 !important;
+  margin: 0 5px !important;
+}
+.filter-container .MuiListItemButton-root {
+  margin-left: 20px;
+}
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.side-container {
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.css-1oj2twp-MuiPagination-root {
+  margin: 6vh auto 10vh;
+}

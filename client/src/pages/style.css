@@ -1,0 +1,14 @@
+.price-range{
+  font-size: 18px;
+}
+
+.BidsDetailsPriceBar{
+  padding:0.5rem;
+  margin-left: 1.5rem;
+  width:20%;
+  border: 1px solid hsl(0deg 0% 71%);
+  border-radius:4px;
+}
+.BidsDetailsPriceBar:hover{
+  border: 1px solid hsl(0deg 0% 40%);
+}

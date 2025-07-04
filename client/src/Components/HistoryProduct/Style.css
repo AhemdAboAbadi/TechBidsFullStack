@@ -1,0 +1,16 @@
+.history-table::-webkit-scrollbar {
+  width: 6px;
+}
+.history-table::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #000000;
+}
+
+.conatiner-table{
+  margin: 4vh auto;
+  width:75%;
+  margin-top: 5%;    
+}
+.date-space{
+    width: 16.6%;
+}

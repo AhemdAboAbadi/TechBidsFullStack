@@ -1,0 +1,18 @@
+.container-last-auctions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+
+.header-last-auctions{
+  font-size: 34px;
+    margin: 1rem 0 3rem 0;
+    font-weight: bold;
+}
+.lastAuctions-container{
+  display: flex;
+  width: 70%;
+  margin: 3vh auto;
+  justify-content: space-between;
+}

@@ -1,0 +1,161 @@
+{
+  "users": [
+    {
+      "name": "test1",
+      "email": "test1@gmail.com",
+      "password": "1234567888"
+    },
+    {
+      "name": "test2",
+      "email": "test2@gmail.com",
+      "password": "1234567888"
+    },
+    {
+      "name": "test3",
+      "email": "test3@gmail.com",
+      "password": "$2a$10$94OU9U7iXIg40LkRkr/j.usaygbitLkPvs6NUrcS7WsuBrup5b7/y"
+    },
+    {
+      "name": "test4",
+      "email": "test4@gmail.com",
+      "password": "$2a$10$94OU9U7iXIg40LkRkr/j.usaygbitLkPvs6NUrcS7WsuBrup5b7/y"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Accessories",
+      "image": "https://i.ibb.co/B4D1MjZ/headphone-Background.jpg"
+    },
+    {
+      "name": "DeskTop",
+      "image": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "name": "Mobile",
+      "image": "https://plus.unsplash.com/premium_photo-1681313824743-7b5a2a635938?q=80&w=2632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "name": "LapTop",
+      "image": "https://i.ibb.co/nB3gpsz/labtop-Background.jpg"
+    }
+  ],
+  "products": [
+    {
+      "user_id": 1,
+      "winner_id": 1,
+      "category_id": 4,
+      "auc_amount": 400,
+      "auc_inc_amount": 50,
+      "end_date": "2025-11-29T14:34:03.800Z",
+      "name": "LabTop",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsFAAF5nU8p12eycPHmPbcRKtb0_mZIOUwKA&usqp=CAU",
+      "description": "Microsoft Surface Laptop 4 13.5” Touch-Screen – AMD Ryzen 5 Surface Edition - 8GB Memory - 256GB Solid State Drive (Latest Model) - Platinum",
+      "is_open": true,
+      "is_used": false
+    },
+    {
+      "user_id": 2,
+      "winner_id": 1,
+      "category_id": 2,
+      "auc_amount": 100,
+      "auc_inc_amount": 20,
+      "end_date": "2022-11-29T14:34:03.800Z",
+      "name": "Desktop Gamer Las Vegas",
+      "image": "https://www.cyberpowerpc.com/images/cs/pc008/cs-450-160_220.png?v2",
+      "description": "The Ragdoll is a cat breed with blue eyes and a distinct colorpoint coat. It is a large and muscular semi-longhair cat with a soft and silky coat. Like all long haired cats, Ragdolls need grooming to ensure their fur does not mat.",
+      "is_open": true,
+      "is_used": false
+    },
+    {
+      "user_id": 3,
+      "winner_id": 2,
+      "category_id": 3,
+      "auc_amount": 520,
+      "auc_inc_amount": 10,
+      "end_date": "2022-11-29T14:34:03.800Z",
+      "name": "Samsung M12 64GB Phone",
+      "image": "https://www.mytrendyphone.eu/images/Samsung-Galaxy-M12-Duos-128GB-Black-8806092543003-08112021-01-p.jpg",
+      "description": "Samsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh RateSamsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate",
+      "is_open": true,
+      "is_used": true
+    },
+    {
+      "user_id": 3,
+      "winner_id": 2,
+      "category_id": 1,
+      "auc_amount": 520,
+      "auc_inc_amount": 10,
+      "end_date": "2021-11-29T14:34:03.800Z",
+      "name": "Beats Solo3 Wireless On-Ear Headphones",
+      "image": "https://i5.walmartimages.com/asr/30fca38d-6f85-4f48-8ff9-cbf21aa12c12.f75cfc34c1fb5d18507ab7e3cfabb477.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "description": "The Everyday Headphones With booming sound and superior noise cancellation, you can block out all distractions and stay focused on your mission.",
+      "is_open": false,
+      "is_used": true
+    },
+    {
+      "user_id": 3,
+      "winner_id": 2,
+      "category_id": 3,
+      "auc_amount": 520,
+      "auc_inc_amount": 10,
+      "end_date": "2021-11-29T14:34:03.800Z",
+      "name": "GOOGLE PIXEL 6",
+      "image": "https://i.expansys.net/img/b/368026/google-pixel-6-5g-dual-sim.jpg",
+      "description": "Google Pixel 6 5G Dual SIM Network Compatibility | 8GB RAM, 128GB Storage | 50 MP, (wide), PDAF, OIS, 12 MP, (ultrawide) | Li-Ion 4614 mAh, non-removable BATTERY",
+      "is_open": false,
+      "is_used": true
+    },
+    {
+      "user_id": 3,
+      "winner_id": 2,
+      "category_id": 4,
+      "auc_amount": 520,
+      "auc_inc_amount": 10,
+      "end_date": "2020-11-29T14:34:03.800Z",
+      "name": "Alienware m15 R6-198 LAPTOP",
+      "image": "https://media.ldlc.com/r1600/ld/products/00/05/86/91/LD0005869128_1.jpg",
+      "description": "Intel Core i7-11800H 16 GB SSD 1 TB 15.6, Full HD 360 Hz NVIDIA GeForce RTX 3080 8 GB Wi-Fi AX/Bluetooth Webcam Windows 10 Home 64 bit",
+      "is_open": false,
+      "is_used": true
+    },
+    {
+      "user_id": 3,
+      "winner_id": 2,
+      "category_id": 1,
+      "auc_amount": 520,
+      "auc_inc_amount": 10,
+      "end_date": "2020-11-29T14:34:03.800Z",
+      "name": "AirPods 3",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV2?wid=2000&hei=2000&fmt=jpeg&qlt=80&.v=1632861338000",
+      "description": "Personalise them for free, Engrave a mix of emoji, text and numbers to make AirPods unmistakably yours. Only at Apple.",
+      "is_open": false,
+      "is_used": true
+    }
+  ],
+
+  "auctions": [
+    {
+      "user_id": 1,
+      "product_id": 1,
+      "date": "2022-11-29T14:34:03.800Z",
+      "amount": 400
+    },
+    {
+      "user_id": 2,
+      "product_id": 3,
+      "date": "2022-11-29T14:34:03.800Z",
+      "amount": 520
+    },
+    {
+      "user_id": 3,
+      "product_id": 3,
+      "date": "2022-11-29T14:34:03.800Z",
+      "amount": 520
+    },
+    {
+      "user_id": 3,
+      "product_id": 4,
+      "amount": 520
+    }
+  ]
+}
