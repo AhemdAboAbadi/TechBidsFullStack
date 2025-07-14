@@ -1,10 +1,8 @@
 /* eslint-disable no-console */
 const {app, server} = require("./app")
 
-app.listen(app.get("PORT"), () => {
-  console.log(`Server in listening at http://localhost:${app.get("PORT")}`)
-})
+const PORT = process.env.PORT || 8000
 
-server.listen(8800, () => {
-  console.log("Server in socket ")
+server.listen(PORT, () => {
+  console.log(`🚀 Server (w/ socket.io) running at http://localhost:${PORT}`)
 })

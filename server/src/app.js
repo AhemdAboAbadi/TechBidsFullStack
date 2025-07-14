@@ -16,6 +16,7 @@ const server = http.createServer(app)
 const io = new Server(server, {
   cors: {
     origin: "*",
+    methods: ["GET", "POST"],
   },
 })
 
@@ -29,14 +30,11 @@ io.on("connection", (socket) => {
 
   socket.on("sendPrice", async (data) => {
     try {
-      console.log(data)
+      console.log("📤 New bid:", data)
       const product = await Product.findByPk(data.room)
       product.auc_amount += product.auc_inc_amount
       await product.save()
-      console.log(
-        "sssssssssssssssssssssssssssssssssssssssssssssss",
-        product.auc_amount
-      )
+
       await Auction.create({
         user_id: data.user_id,
         product_id: data.room,
@@ -67,11 +65,10 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use("/api", router)
 
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(join(__dirname, "..", "client", "build")))
-//   app.get("*", (req, res) => {
-//     res.sendFile(join(__dirname, "..", "client", "build", "index.html"))
-//   })
-// }
+// Optional: Serve frontend if needed
+// app.use(express.static(join(__dirname, "..", "..", "client", "build")));
+// app.get("*", (req, res) => {
+//   res.sendFile(join(__dirname, "..", "..", "client", "build", "index.html"));
+// });
 
 module.exports = {app, server}
