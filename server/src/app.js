@@ -15,7 +15,7 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
   cors: {
-    origin: "https://rtmerqrm.manus.space",
+    origin: "*",
     method: "GET",
   },
 })

@@ -7,7 +7,7 @@ import {useParams, useNavigate} from "react-router-dom"
 import {useAuth} from "../../context/useAuth"
 import {useSnack} from "../../context/useSnack"
 
-const socket = io("https://rtmerqrm.manus.space")
+const socket = io("http://localhost:3000")
 
 interface Props {
   children: any
