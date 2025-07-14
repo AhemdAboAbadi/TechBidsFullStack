@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node server/src/index.js",
-    "dev": "cross-env NODE_ENV=development nodemon server/src/index.js",
+    "start": "cross-env NODE_ENV=production node src/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js",
     "test": "cross-env NODE_ENV=test jest --runInBand",
-    "db:build": "cross-env NODE_ENV=development node server/src/config/dbBuild.js",
-    "lint": "eslint server/src/** .",
-    "lint-fix": "eslint server/src/** --fix",
+    "db:build": "cross-env NODE_ENV=development node src/config/dbBuild.js",
+    "lint": "eslint src/** .",
+    "lint-fix": "eslint src/** --fix",
     "lint-client": "cd client && npm run lint"
   },
   "repository": {
