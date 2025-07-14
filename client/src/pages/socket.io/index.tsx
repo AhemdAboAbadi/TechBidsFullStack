@@ -7,7 +7,7 @@ import {useParams, useNavigate} from "react-router-dom"
 import {useAuth} from "../../context/useAuth"
 import {useSnack} from "../../context/useSnack"
 
-const socket = io("http://localhost:3000")
+const socket = io("https://techbids-backend.onrender.com")
 
 interface Props {
   children: any
