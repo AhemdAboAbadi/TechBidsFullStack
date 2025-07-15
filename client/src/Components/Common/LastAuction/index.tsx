@@ -1,47 +1,45 @@
 /* eslint-disable camelcase */
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { useSnack } from '../../../context/useSnack';
-import ProductCard from '../ProductCard';
-import './style.css';
+import React, {useState, useEffect} from "react"
+import axios from "axios"
+import {useSnack} from "../../../context/useSnack"
+import ProductCard from "../ProductCard"
+import "./style.css"
 
 interface lastAuction {
-  image: string,
-  name: string,
-  description: string,
-  auc_amount: number,
-  is_open : boolean,
-  end_date: any,
+  image: string
+  name: string
+  description: string
+  auc_amount: number
+  is_open: boolean
+  end_date: any
   id: number
 }
 
-const LastAuction:React.FC = () => {
-  const [lastAuctions, setLastAuctions] = useState([]);
-  const { showSnack } = useSnack();
+const LastAuction: React.FC = () => {
+  const [lastAuctions, setLastAuctions] = useState([])
+  const {showSnack} = useSnack()
 
   useEffect(() => {
-    const source = axios.CancelToken.source();
-    const fetchLastAuctions = async ():Promise<void> => {
+    const source = axios.CancelToken.source()
+    const fetchLastAuctions = async (): Promise<void> => {
       try {
-        const result:any = await axios.get('/api/latest/auction');
-        setLastAuctions(result.data.last3Auction);
-      } catch (err : any) {
-        showSnack(err.response.data.message, 'error');
+        const result: any = await axios.get("/api/latest/auction")
+        setLastAuctions(result?.data?.last3Auction)
+      } catch (err: any) {
+        showSnack(err?.response?.data?.message, "error")
       }
-    };
-    fetchLastAuctions();
+    }
+    fetchLastAuctions()
     return () => {
-      source.cancel();
-    };
-  }, []);
+      source.cancel()
+    }
+  }, [])
 
   return (
     <div className="container-last-auctions">
-      <h2 className="header-last-auctions">
-        LATEST ACTIONS
-      </h2>
+      <h2 className="header-last-auctions">LATEST ACTIONS</h2>
       <div className="lastAuctions-container">
-        {lastAuctions.map((ele:lastAuction) => (
+        {lastAuctions.map((ele: lastAuction) => (
           <ProductCard
             image={ele.image}
             description={ele.description}
@@ -54,6 +52,6 @@ const LastAuction:React.FC = () => {
         ))}
       </div>
     </div>
-  );
-};
-export default LastAuction;
+  )
+}
+export default LastAuction
