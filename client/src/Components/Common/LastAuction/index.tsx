@@ -24,7 +24,7 @@ const LastAuction: React.FC = () => {
     const fetchLastAuctions = async (): Promise<void> => {
       try {
         const result: any = await axios.get("/api/latest/auction")
-        setLastAuctions(result?.data?.last3Auction)
+        setLastAuctions(result?.data?.last3Auction || [])
       } catch (err: any) {
         showSnack(err?.response?.data?.message, "error")
       }
