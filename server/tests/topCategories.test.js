@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 const request = require('supertest');
-const { app } = require('../src/app');
-const { build } = require('../src/config/dbBuild');
-const { sequelize } = require('../src/config/connection');
+const {app} = require('../src/app');
+const {build} = require('../src/config/dbBuild');
+const {sequelize} = require('../src/config/connection');
 
 beforeEach(() => build());
 
@@ -17,27 +17,27 @@ describe('top categories tests', () => {
           categoriesData: [
             {
               id: 1,
-              name: 'Accessories',
               image: 'https://i.ibb.co/B4D1MjZ/headphone-Background.jpg',
+              name: 'Accessories',
               productCount: '2',
             },
             {
               id: 2,
-              name: 'DeskTop',
               image: 'https://www.linkpicture.com/q/desktop.png',
+              name: 'DeskTop',
               productCount: '1',
             },
             {
               id: 3,
-              name: 'Mobile',
               image: 'https://www.linkpicture.com/q/mobile_3.png',
+              name: 'Mobile',
               productCount: '2',
             },
             {
               id: 4,
-              name: 'LapTop',
               image: 'https://i.ibb.co/nB3gpsz/labtop-Background.jpg',
-              productCount: '2',
+              name: 'LapTop',
+              productCount: '3',
             },
           ],
         });

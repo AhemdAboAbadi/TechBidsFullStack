@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ThemeProvider } from '@mui/material/styles';
-import { ProvideAuth } from './context/useAuth';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {ThemeProvider} from '@mui/material/styles';
+import {ProvideAuth} from './context/useAuth';
 import ProductDetails from './pages/ProductDetails';
 import theme from './theme';
 import SignIn from './pages/SignIn';
@@ -13,29 +13,30 @@ import UserWinBids from './pages/UserWinBids';
 import UserProducts from './pages/UserProducts';
 import UserEnteredBids from './pages/UserEnteredBids';
 
-const App : React.FC = () => (
-  <div>
+const App: React.FC = () => (
+  <div className="app-container">
     <Router>
       <ProvideAuth>
         <ThemeProvider theme={theme}>
-          <Routes>
-            <Route path="/*" element={<Home />} />
-            <Route path="/bids*" element={<Bids />} />
-            <Route path="/product/:id" element={<ProductDetails />} />
+          <div className="content-wrapper">
+            <Routes>
+              <Route path="/*" element={<Home />} />
+              <Route path="/bids*" element={<Bids />} />
+              <Route path="/product/:id" element={<ProductDetails />} />
 
-            <Route path="/user/products*" element={<UserProducts />} />
-            <Route path="/user/win*" element={<UserWinBids />} />
-            <Route path="/user/bids*" element={<UserEnteredBids />} />
+              <Route path="/user/products*" element={<UserProducts />} />
+              <Route path="/user/win*" element={<UserWinBids />} />
+              <Route path="/user/bids*" element={<UserEnteredBids />} />
 
-            <Route path="/signin*" element={<SignIn />} />
-            <Route path="/signup*" element={<SignUp />} />
+              <Route path="/signin*" element={<SignIn />} />
+              <Route path="/signup*" element={<SignUp />} />
 
-            <Route path="*" element={<div>NOT FOUND</div>} />
-          </Routes>
+              <Route path="*" element={<div>NOT FOUND</div>} />
+            </Routes>
+          </div>
         </ThemeProvider>
       </ProvideAuth>
     </Router>
-
   </div>
 );
 

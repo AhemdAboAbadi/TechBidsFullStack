@@ -6,7 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Typography from '@mui/material/Typography';
 import './style.css';
 
-const Footer : React.FC = () => (
+const Footer: React.FC = () => (
   <div className="footer-container">
     <div className="icons">
       <FacebookIcon className="icon" />
@@ -16,10 +16,9 @@ const Footer : React.FC = () => (
     </div>
     <div className="copy_right">
       <Typography variant="body1" gutterBottom className="paragraph-description">
-        Copyright © 2021 Techbids.com. All rights reserved.
+        Copyright © 2025 Techbids.com. All rights reserved.
       </Typography>
     </div>
   </div>
-
 );
 export default Footer;

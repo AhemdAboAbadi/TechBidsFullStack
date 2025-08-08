@@ -1,5 +1,62 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.bids-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.product-details-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.user-products-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.user-win-bids-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.user-entered-bids-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

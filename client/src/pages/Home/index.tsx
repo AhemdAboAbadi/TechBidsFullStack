@@ -5,10 +5,12 @@ import Header from '../../Components/Header';
 import LastAuction from '../../Components/Common/LastAuction';
 
 const Home: React.FC = (): any => (
-  <div>
+  <div className="home-container">
     <NavBar />
-    <Header />
-    <LastAuction />
+    <div className="main-content">
+      <Header />
+      <LastAuction />
+    </div>
     <Footer />
   </div>
 );
