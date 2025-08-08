@@ -48,11 +48,11 @@
     },
     {
       "name": "DeskTop",
-      "image": "https://www.linkpicture.com/q/desktop.png"
+      "image": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "Mobile",
-      "image": "https://www.linkpicture.com/q/mobile_3.png"
+      "image": "https://plus.unsplash.com/premium_photo-1681313824743-7b5a2a635938?q=80&w=2632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "name": "LapTop",
@@ -81,7 +81,7 @@
       "auc_inc_amount": 100,
       "end_date": "2023-12-15T10:00:00.000Z",
       "name": "Gaming Desktop",
-      "image": "https://www.linkpicture.com/q/desktop.png",
+      "image": "https://plus.unsplash.com/premium_photo-1682141878168-5dace8e1785d?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "High-end gaming desktop with RTX 3080",
       "is_open": true,
       "is_used": true
@@ -94,7 +94,7 @@
       "auc_inc_amount": 75,
       "end_date": "2023-11-20T15:30:00.000Z",
       "name": "iPhone 14 Pro",
-      "image": "https://www.linkpicture.com/q/mobile_3.png",
+      "image": "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Latest iPhone with advanced camera system",
       "is_open": true,
       "is_used": false
@@ -159,7 +159,7 @@
       "auc_inc_amount": 10,
       "end_date": "2025-11-29T14:34:03.800Z",
       "name": "GOOGLE PIXEL 6",
-      "image": "https://i.expansys.net/img/b/368026/google-pixel-6-5g-dual-sim.jpg",
+      "image": "https://images.unsplash.com/photo-1659080382102-176e51b4f5f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Google Pixel 6 5G Dual SIM Network Compatibility | 8GB RAM, 128GB Storage | 50 MP, (wide), PDAF, OIS, 12 MP, (ultrawide) | Li-Ion 4614 mAh, non-removable BATTERY",
       "is_open": false,
       "is_used": true
